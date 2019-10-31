@@ -1,7 +1,7 @@
 const path = require("path");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
+const { CleanWebpackPlugin } = require("clean-webpack-plugin");
 
-debugger;
 module.exports = {
   module: {
     rules: [
@@ -11,8 +11,11 @@ module.exports = {
         use: {
           loader: "babel-loader"
         }
+      },
+      {
+        test: /\.(s*)css$/,
+        loader: ["style-loader", "css-loader", "sass-loader"]
       }
-     
     ]
   },
   entry: "./index.js",
@@ -33,6 +36,10 @@ module.exports = {
   plugins: [
     new HtmlWebpackPlugin({
       template: "./public/index.html"
-    })
-  ]
+    }),
+    new CleanWebpackPlugin()
+  ],
+  resolve: {
+    extensions: [".js", ".jsx"]
+  }
 };
