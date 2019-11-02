@@ -1,7 +1,8 @@
-import React from "react";
-import RouterContainer from "components/Router";
+import React from 'react';
+import RouterContainer from 'components/Router';
+import Header from 'components/Header';
 
-import "./app.scss";
+import './app.scss';
 
 export default function App() {
   return (
