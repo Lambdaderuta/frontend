@@ -11,6 +11,4 @@ store.dispatch({
   text: "sdfsdfsdfsdfsdf"
 });
 
-console.log(store.getState());
-
 export default store;
