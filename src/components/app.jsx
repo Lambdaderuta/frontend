@@ -6,11 +6,13 @@ import './app.scss';
 
 export default function App() {
   return (
-    <div className="app__wrapper">
-      <div className="app__header">
-        <Header />
+      <div className="app__wrapper">
+        <div className="app__header">
+          <Header />
+        </div>
+        <div className="body">
+          <RouterContainer />
+        </div>
       </div>
-      <RouterContainer />
-    </div>
   );
 }

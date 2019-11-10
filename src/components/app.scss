@@ -1,7 +1,7 @@
-@import "lib/vars.scss";
+@import '../lib/vars';
 
 .app {
   &__wrapper {
-    background: $red;
+    background: url("../img/color.png");
   }
 }

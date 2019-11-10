@@ -6,6 +6,12 @@
         "paths": {
             "components/*": [
                 "src/components/*"
+            ],
+            "public/*": [
+                "public/*"
+            ],
+            "src/*": [
+                "src/*"
             ]
         }
     },
